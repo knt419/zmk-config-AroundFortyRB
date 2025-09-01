@@ -27,7 +27,7 @@ layers:
   - M
   - B
   - LANGUAGE 2
-  - LANGUAGE 1
+  - {t: LANGUAGE 1, h: SYSTEM}
   - J
   - {t: Y, h: Ctl+Y}
   - {t: V, h: Ctl+V}
@@ -285,7 +285,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - OUT BLE
   - $$mdi:bluetooth-off$$
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
   - OUT BLE
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}

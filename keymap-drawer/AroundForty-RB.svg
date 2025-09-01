@@ -427,9 +427,11 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 140)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 75%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">1</tspan>
+<tspan x="0" dy="-0.9em" style="font-size: 75%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">1</tspan>
 </text>
-</g>
+<a href="#SYSTEM">
+<text x="0" y="24" class="key hold layer-activator">SYSTEM</text>
+</a></g>
 <g transform="translate(476, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
@@ -1605,9 +1607,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:bluetooth-off" xlink:href="#mdi:bluetooth-off" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:bluetooth-off"/>
 </g>
-<g transform="translate(420, 140)" class="key trans keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#tabler:fold-down" xlink:href="#tabler:fold-down" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph tabler:fold-down"/>
+<g transform="translate(420, 140)" class="key held keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(476, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
