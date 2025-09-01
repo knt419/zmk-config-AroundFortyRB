@@ -302,7 +302,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:progress-download$$
 combos:
-- p: [19, 20]
+- p: [17, 18]
   k: {t: LANGUAGE 1, h: LANGUAGE 2}
   l: [DEFAULT, MOUSE]
 - p: [7, 8]
@@ -311,21 +311,21 @@ combos:
 - p: [5, 6]
   k: '&winmvleft'
   l: [DEFAULT, MOUSE]
-- p: [20, 21]
+- p: [18, 19]
   k: {t: ;, h: Ctl+;, s: ':'}
   l: [DEFAULT, MOUSE]
-- p: [18, 19]
+- p: [16, 17]
   k: {t: ':', h: 'Ctl+:'}
   l: [DEFAULT, MOUSE]
 - p: [2, 1]
   k: '{}'
   l: [DEFAULT, MOUSE, NUMBER]
-- p: [23, 24]
+- p: [21, 22]
   k: '[]'
   l: [DEFAULT, MOUSE, NUMBER]
 - p: [11, 12]
   k: ()
   l: [DEFAULT, MOUSE, NUMBER]
-- p: [31, 32]
+- p: [29, 30]
   k: Alt+`
   l: [DEFAULT, MOUSE]
