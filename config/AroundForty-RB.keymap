@@ -269,13 +269,22 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mo 2   &mkp MCLK  &mkp RCLK
-&trans  &trans  &trans  &trans  &mo 2   &trans      &trans  &trans                     &trans     &trans
+&trans  &trans  &trans  &trans  &mo 2   &mo 3       &trans  &trans                     &trans     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
+            >;
+        };
+
+        SNIPE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
