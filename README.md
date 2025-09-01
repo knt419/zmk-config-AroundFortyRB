@@ -1,5 +1,11 @@
 # zmk-config-AroundFortyRB
+## keymap
+<img src="keymap-drawer/microball.svg" >
 
-Around Forty RightBallのファームウェア
+## module
 
-V1はMCUを基板の底面に取り付け＆MXスイッチ対応ですが、V2はMCUを基板の上部に取り付けるよう仕様変更をしています。
+### PMW3610 driver implementation for ZMK
+https://github.com/badjeff/zmk-pmw3610-driver
+
+### LED indicators using an RGB LED
+https://github.com/caksoylar/zmk-rgbled-widget
