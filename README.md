@@ -1,6 +1,6 @@
 # zmk-config-AroundFortyRB
 ## keymap
-<img src="keymap-drawer/microball.svg" >
+<img src="keymap-drawer/AroundForty-RB.svg" >
 
 ## module
 
