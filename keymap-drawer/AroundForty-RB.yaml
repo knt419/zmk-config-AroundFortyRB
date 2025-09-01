@@ -16,8 +16,6 @@ layers:
   - {t: A, h: Ctl+A}
   - K
   - G
-  - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
   - H
   - N
   - O
@@ -74,8 +72,6 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - SCROLL
   - $$mdi:mouse-scroll-wheel$$
@@ -91,8 +87,6 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   SCROLL:
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -173,8 +167,6 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
   - {type: held}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -196,8 +188,6 @@ layers:
   - '5'
   - '6'
   - {t: '-', s: _}
-  - $$material:1x_mobiledata$$
-  - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -241,8 +231,6 @@ layers:
   - F5
   - F6
   - Ctl+C
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-caps$$
   - HOME
   - PgDn
   - PgUp
@@ -286,8 +274,6 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - $$mdi:bluetooth-off$$
-  - {type: held}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -298,7 +284,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - OUT BLE
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - $$mdi:bluetooth-off$$
   - {t: '$$tabler:fold-down$$', type: trans}
   - OUT BLE
   - {t: '$$tabler:fold-down$$', type: trans}
