@@ -71,6 +71,12 @@
             key-positions = <29 30>;
             layers = <0 1>;
         };
+
+        find {
+            bindings = <&kp LC(F)>;
+            key-positions = <20 21>;
+            layers = <0 1>;
+        };
     };
 
     macros {
