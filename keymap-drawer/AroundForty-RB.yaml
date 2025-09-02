@@ -27,7 +27,7 @@ layers:
   - M
   - B
   - LANGUAGE 2
-  - {t: LANGUAGE 1, h: SYSTEM}
+  - LANGUAGE 1
   - J
   - {t: Y, h: Ctl+Y}
   - {t: V, h: Ctl+V}
@@ -41,7 +41,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:backspace$$', h: FUNCTION, s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-esc$$', h: SYSTEM}
   - $$material:screenshot_region$$
   MOUSE:
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -285,7 +285,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - OUT BLE
   - $$mdi:bluetooth-off$$
-  - {type: held}
+  - {t: '$$tabler:fold-down$$', type: trans}
   - OUT BLE
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -299,7 +299,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
   - $$mdi:progress-download$$
 combos:
 - p: [17, 18]
