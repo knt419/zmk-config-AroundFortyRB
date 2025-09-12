@@ -24,14 +24,14 @@
 
         win_mv_right {
             bindings = <&winmvright>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             slow-release;
             layers = <0 1>;
         };
 
         win_mv_left {
             bindings = <&winmvleft>;
-            key-positions = <5 6>;
+            key-positions = <0 1>;
             slow-release;
             layers = <0 1>;
         };
@@ -49,32 +49,38 @@
         };
 
         braces {
-            bindings = <&braces>;
+            bindings = <&brace 0 0>;
             key-positions = <2 1>;
             layers = <0 1 4>;
         };
 
         brackets {
-            bindings = <&brackets>;
+            bindings = <&brack 0 0>;
             key-positions = <21 22>;
             layers = <0 1 4>;
         };
 
         parenthesis {
-            bindings = <&parenthesis>;
+            bindings = <&paren 0 0>;
             key-positions = <11 12>;
             layers = <0 1 4>;
         };
 
         jis_ime_togle {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <29 30>;
+            key-positions = <7 8>;
             layers = <0 1>;
         };
 
         find {
             bindings = <&kp LC(F)>;
             key-positions = <20 21>;
+            layers = <0 1>;
+        };
+
+        paste {
+            bindings = <&holdtap LC(LS(V)) LG(V)>;
+            key-positions = <29 30>;
             layers = <0 1>;
         };
     };
@@ -201,6 +207,27 @@
             bindings = <&kp LANGUAGE_2 &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "BRACES";
         };
+
+        zen_parenthesis: zen_parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "ZEN_PARENTHESIS";
+        };
+
+        zen_brackets: zen_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "ZEN_BRACKETS";
+        };
+
+        zen_braces: zen_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "ZEN_BRACES";
+        };
     };
 
     behaviors {
@@ -253,6 +280,36 @@
 
             tap-ms = <20>;
         };
+
+        paren: paren {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PAREN";
+            bindings = <&zen_parenthesis>, <&parenthesis>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        brack: brack {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BRACK";
+            bindings = <&zen_brackets>, <&brackets>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        brace: brace {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BRACE";
+            bindings = <&zen_braces>, <&braces>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -261,8 +318,8 @@
         DEFAULT {
             bindings = <
 &kp Q                         &kp W             &kp MINUS         &kp R      &holdtap LC(Z) Z                  &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L             &kp P
-&kp I                         &kp T             &holdtap LC(A) A  &kp K      &kp G                             &kp H             &kp N        &kp O             &kp U             &holdtap LC(S) S
-&mt LEFT_SHIFT SLASH          &holdtap LC(F) F  &holdtap LC(C) C  &kp M      &kp B             &kp LANGUAGE_2  &kp LANGUAGE_1    &kp J        &holdtap LC(Y) Y  &holdtap LC(V) V  &holdtap LG(V) COMMA  &holdtap QUESTION PERIOD
+&kp I                         &kp T             &holdtap LC(A) A  &kp K      &kp G                             &kp H             &kp N        &kp O             &kp U             &kp S
+&mt LEFT_SHIFT SLASH          &holdtap LC(F) F  &holdtap LC(C) C  &kp M      &kp B             &kp LANGUAGE_2  &kp LANGUAGE_1    &kp J        &holdtap LC(Y) Y  &holdtap LC(V) V  &holdtap EXCLAMATION COMMA  &holdtap QUESTION PERIOD
 &holdtap LC(SPACE) LS(LC(M))  &kp LEFT_WIN      &kp LEFT_ALT      &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB   &lt_bsdel 5 0     &lt 4 ENTER  &lt 6 ESC         &kp PRINTSCREEN
             >;
 
