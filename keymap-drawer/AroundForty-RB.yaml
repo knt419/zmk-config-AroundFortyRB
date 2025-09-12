@@ -20,7 +20,7 @@ layers:
   - N
   - O
   - U
-  - {t: S, h: Ctl+S}
+  - S
   - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
   - {t: F, h: Ctl+F}
   - {t: C, h: Ctl+C}
@@ -31,7 +31,7 @@ layers:
   - J
   - {t: Y, h: Ctl+Y}
   - {t: V, h: Ctl+V}
-  - {t: ',', h: V, s: <}
+  - {t: ',', h: '!', s: <}
   - {t: ., h: '?'}
   - {t: '$$mdi:microphone-off$$', h: 'Ctl+$$mdi:keyboard-space$$'}
   - $$mdi:microsoft-windows$$
@@ -305,10 +305,10 @@ combos:
 - p: [17, 18]
   k: {t: LANGUAGE 1, h: LANGUAGE 2}
   l: [DEFAULT, MOUSE]
-- p: [7, 8]
+- p: [8, 9]
   k: '&winmvright'
   l: [DEFAULT, MOUSE]
-- p: [5, 6]
+- p: [0, 1]
   k: '&winmvleft'
   l: [DEFAULT, MOUSE]
 - p: [18, 19]
@@ -318,17 +318,20 @@ combos:
   k: {t: ':', h: 'Ctl+:'}
   l: [DEFAULT, MOUSE]
 - p: [2, 1]
-  k: '{}'
+  k: {t: '{}', h: '&zen_braces'}
   l: [DEFAULT, MOUSE, NUMBER]
 - p: [21, 22]
-  k: '[]'
+  k: {t: '[]', h: '&zen_brackets'}
   l: [DEFAULT, MOUSE, NUMBER]
 - p: [11, 12]
-  k: ()
+  k: {t: (), h: '&zen_parenthesis'}
   l: [DEFAULT, MOUSE, NUMBER]
-- p: [29, 30]
+- p: [7, 8]
   k: Alt+`
   l: [DEFAULT, MOUSE]
 - p: [20, 21]
   k: Ctl+F
+  l: [DEFAULT, MOUSE]
+- p: [29, 30]
+  k: {t: V, h: Ctl+Sft+V}
   l: [DEFAULT, MOUSE]
