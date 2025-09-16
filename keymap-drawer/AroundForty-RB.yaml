@@ -329,3 +329,6 @@ combos:
 - p: [16, 17]
   k: {t: Ctl+V, h: V}
   l: [DEFAULT, MOUSE]
+- p: [12, 13]
+  k: '&DBLSFT'
+  l: [DEFAULT, MOUSE]

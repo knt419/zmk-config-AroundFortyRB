@@ -544,6 +544,10 @@ rect.held, rect.combo.held {
 <text x="560" y="84" class="combo tap">Ctl+V</text>
 <text x="560" y="95" class="combo hold">V</text>
 </g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
+<text x="168" y="84" class="combo tap"><tspan style="font-size: 86%">&amp;DBLSFT</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 280)" class="layer-MOUSE">
@@ -762,6 +766,10 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
 <text x="560" y="84" class="combo tap">Ctl+V</text>
 <text x="560" y="95" class="combo hold">V</text>
+</g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="154" y="71" width="28" height="26" class="combo"/>
+<text x="168" y="84" class="combo tap"><tspan style="font-size: 86%">&amp;DBLSFT</tspan></text>
 </g>
 </g>
 </g>
