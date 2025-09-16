@@ -71,6 +71,12 @@
             key-positions = <16 17>;
             layers = <0 1>;
         };
+
+        dblsft {
+            bindings = <&DBLSFT>;
+            key-positions = <12 13>;
+            layers = <0 1>;
+        };
     };
 
     macros {
