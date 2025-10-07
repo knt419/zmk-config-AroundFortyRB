@@ -222,6 +222,20 @@
             bindings = <&kp LANGUAGE_1 &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "ZEN_BRACES";
         };
+
+        right_arrow: right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp MINUS &kp GT &kp SPACE>;
+            label = "RIGHT_ARROW";
+        };
+
+        left_arrow: left_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LESS_THAN &kp MINUS &kp SPACE>;
+            label = "LEFT_ARROW";
+        };
     };
 
     behaviors {
@@ -304,6 +318,16 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        arrows: arrows {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ARROWS";
+            bindings = <&left_arrow>, <&right_arrow>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -311,10 +335,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q                         &kp W         &kp MINUS         &kp R      &holdtap LC(Z) Z                  &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L             &kp P
-&kp I                         &kp T         &holdtap LC(A) A  &kp K      &kp G                             &holdtap COLON H  &kp N        &kp O             &kp U             &holdtap SEMI S
-&mt LEFT_SHIFT SLASH          &kp F         &holdtap LC(C) C  &kp M      &kp B             &kp LANGUAGE_2  &kp LANGUAGE_1    &kp J        &holdtap LC(Y) Y  &holdtap LC(V) V  &holdtap EXCLAMATION COMMA  &holdtap QUESTION PERIOD
-&holdtap LC(SPACE) LS(LC(M))  &kp LEFT_WIN  &kp LEFT_ALT      &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB   &lt_bsdel 5 0     &lt 4 ENTER  &lt 6 ESC         &kp PRINTSCREEN
+&kp Q                         &kp W         &kp MINUS         &kp R      &holdtap LC(Z) Z                 &holdtap LC(X) X  &kp D        &holdtap LG(E) E  &kp L             &kp P
+&holdtap COLON I              &kp T         &holdtap LC(A) A  &kp K      &kp G                            &kp H             &kp N        &kp O             &kp U             &holdtap SEMI S
+&mt LEFT_SHIFT SLASH          &kp F         &holdtap LC(C) C  &kp M      &kp B             &at            &arrows 0 0       &kp J        &holdtap LC(Y) Y  &holdtap LC(V) V  &holdtap EXCLAMATION COMMA  &holdtap QUESTION PERIOD
+&holdtap LC(SPACE) LS(LC(M))  &kp LEFT_WIN  &kp LEFT_ALT      &mkp LCLK  &mt LSHIFT SPACE  &mt LCTRL TAB  &lt_bsdel 5 0     &lt 4 ENTER  &lt 6 ESC         &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -353,7 +377,7 @@
             bindings = <
 &kp ASTERISK        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                &kp TILDE  &backquote       &quote        &doublequote  &caret
 &kp SLASH           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS                               &kp LEFT   &kp DOWN         &kp UP_ARROW  &kp RIGHT     &kp BACKSLASH
-&kp NUMBER_0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT           &kp COMMA         &pipe      &kp EXCLAMATION  &at           &hash         &amp           &dollar
+&kp NUMBER_0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON             &kp PERCENT       &pipe      &kp EXCLAMATION  &at           &hash         &amp           &dollar
 &kp K_CONTEXT_MENU  &DBLCTL       &DBLSFT       &mkp RCLK     &mt LEFT_SHIFT EQUAL  &mt LCTRL PERIOD  &trans     &trans           &trans        &kp UNDER
             >;
 
