@@ -67,11 +67,11 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
+  - Alt+$$mdi:arrow-left-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:mouse-left-click-outline$$
   - SCROLL
   - $$mdi:mouse-scroll-wheel$$
@@ -331,4 +331,10 @@ combos:
   l: [DEFAULT, MOUSE]
 - p: [12, 13]
   k: '&DBLSFT'
+  l: [DEFAULT, MOUSE]
+- p: [10, 11]
+  k: Alt+$$mdi:arrow-left-bold$$
+  l: [DEFAULT, MOUSE]
+- p: [18, 19]
+  k: Alt+$$mdi:arrow-right-bold$$
   l: [DEFAULT, MOUSE]
