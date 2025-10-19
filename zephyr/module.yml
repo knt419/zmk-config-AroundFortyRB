@@ -1,3 +1,4 @@
+name: zmk-config-AroundForty-RB
 build:
   settings:
     board_root: .
