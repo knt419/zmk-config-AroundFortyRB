@@ -219,13 +219,34 @@
         right_arrow: right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp MINUS &kp GT &kp SPACE>;
+            bindings = <&kp LANGUAGE_2 &kp LS(U) &kp PLUS &kp N2 &kp N1 &kp N9 &kp N2 &kp LA(X)>;
+            wait-ms = <1>;
         };
 
         left_arrow: left_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp LESS_THAN &kp MINUS &kp SPACE>;
+            bindings =
+                <&kp LANGUAGE_2 &kp LS(U) &kp PLUS>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp N2 &kp N1 &kp N9 &kp N0 &kp LA(X)>;
+            wait-ms = <1>;
+        };
+
+        down_arrow: down_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LS(U) &kp PLUS &kp N2 &kp N1 &kp N9 &kp NUMBER_3 &kp LA(X)>;
+            wait-ms = <1>;
+        };
+
+        up_arrow: up_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LS(U) &kp PLUS &kp N2 &kp N1 &kp N9 &kp NUMBER_1 &kp LA(X)>;
+            wait-ms = <1>;
         };
     };
 
@@ -305,11 +326,27 @@
 
         arrows: arrows {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&left_arrow>, <&right_arrow>;
+            bindings = <&down_up_arrow>, <&right_left_arrow>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        right_left_arrow: right_left_arrow {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&right_arrow>, <&left_arrow>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        down_up_arrow: down_up_arrow {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&down_arrow>, <&up_arrow>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -331,8 +368,8 @@
             bindings = <
 &trans  &trans  &trans  &trans        &trans                 &trans  &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans        &trans                 &trans  &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &kp LA(LEFT)  &kp LA(RIGHT)  &trans  &trans  &kp LA(LEFT)  &mkp LCLK  &mo 2   &mkp MCLK  &mkp RCLK
-&trans  &trans  &trans  &trans        &mo 2          &mo 3   &trans  &trans        &trans     &trans
+&trans  &trans  &trans  &trans        &trans &trans  &trans  &trans  &mkp LCLK  &mkp_layer 2 MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans        &mkp_layer 2 MCLK  &mkp_layer 3 RCLK   &trans  &trans        &trans     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
