@@ -73,15 +73,15 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - '&mkp_layer 2 MCLK'
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - '&mkp_layer 2 MCLK'
-  - '&mkp_layer 3 RCLK'
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: SCROLL}
+  - {t: '$$mdi:mouse-right-click-outline$$', h: SNIPE}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -116,14 +116,14 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held alternate}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
@@ -167,7 +167,7 @@ layers:
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
-  - {t: '$$tabler:fold-down$$', type: trans}
+  - {type: held}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
   - {t: '$$tabler:fold-down$$', type: trans}
