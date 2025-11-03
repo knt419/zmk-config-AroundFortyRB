@@ -36,21 +36,15 @@
             layers = <0 1>;
         };
 
-        braces {
-            bindings = <&brace 0 0>;
-            key-positions = <2 1>;
-            layers = <0 1 4>;
-        };
-
         brackets {
             bindings = <&brack 0 0>;
-            key-positions = <21 22>;
+            key-positions = <1 2>;
             layers = <0 1 4>;
         };
 
         parenthesis {
             bindings = <&paren 0 0>;
-            key-positions = <11 12>;
+            key-positions = <21 22>;
             layers = <0 1 4>;
         };
 
@@ -89,6 +83,12 @@
             key-positions = <18 19>;
             layers = <0 1>;
         };
+
+        IME_OFF {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <11 12>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -112,7 +112,6 @@
                 <&kp LEFT_GUI &kp RIGHT>,
                 <&macro_release>,
                 <&kp RIGHT &kp LEFT_WIN>;
-
         };
 
         winmvleft: winmvleft {
@@ -123,7 +122,6 @@
                 <&kp LEFT_GUI &kp LEFT>,
                 <&macro_release>,
                 <&kp LEFT &kp LEFT_WIN>;
-
         };
 
         at: at {
@@ -403,10 +401,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans        &trans                 &trans  &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans        &trans                 &trans  &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans        &trans &trans  &trans  &trans  &mkp LCLK  &mkp_layer 2 MCLK  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans        &mkp_layer 2 MCLK  &mkp_layer 3 RCLK   &trans  &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans     &trans             &trans
+&trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans     &trans             &trans
+&trans  &trans  &trans  &trans  &trans             &trans             &trans  &trans  &mkp LCLK  &mkp_layer 2 MCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &mkp_layer 2 MCLK  &mkp_layer 3 RCLK  &trans  &trans  &trans     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
