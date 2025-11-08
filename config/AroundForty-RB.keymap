@@ -38,13 +38,13 @@
 
         brackets {
             bindings = <&brack 0 0>;
-            key-positions = <1 2>;
+            key-positions = <20 31>;
             layers = <0 1 4>;
         };
 
         parenthesis {
             bindings = <&paren 0 0>;
-            key-positions = <21 22>;
+            key-positions = <10 19>;
             layers = <0 1 4>;
         };
 
@@ -88,6 +88,12 @@
             bindings = <&kp LANGUAGE_2>;
             key-positions = <11 12>;
             layers = <0 1>;
+        };
+
+        brace {
+            bindings = <&brace 0 0>;
+            key-positions = <0 9>;
+            layers = <0 1 4>;
         };
     };
 
