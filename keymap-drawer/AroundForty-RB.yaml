@@ -344,3 +344,9 @@ combos:
   k: {t: '{}', h: '&zen_braces'}
   l: [DEFAULT, MOUSE, NUMBER]
   draw_separate: true
+- p: [21, 22]
+  k: $$mdi:undo$$
+  l: [DEFAULT, MOUSE]
+- p: [29, 30]
+  k: $$mdi:redo$$
+  l: [DEFAULT, MOUSE]
