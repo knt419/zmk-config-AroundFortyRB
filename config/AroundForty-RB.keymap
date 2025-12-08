@@ -72,18 +72,6 @@
             layers = <0 1>;
         };
 
-        back {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <10 11>;
-            layers = <0 1>;
-        };
-
-        forward {
-            bindings = <&kp LA(RIGHT)>;
-            key-positions = <18 19>;
-            layers = <0 1>;
-        };
-
         IME_OFF {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <11 12>;
@@ -105,6 +93,18 @@
         redo {
             bindings = <&kp LC(Y)>;
             key-positions = <29 30>;
+            layers = <0 1>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <10 11>;
+            layers = <0 1>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <18 19>;
             layers = <0 1>;
         };
     };
