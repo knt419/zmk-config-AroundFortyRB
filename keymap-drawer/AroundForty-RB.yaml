@@ -350,3 +350,6 @@ combos:
 - p: [18, 19]
   k: END
   l: [DEFAULT, MOUSE]
+- p: [30, 31]
+  k: {t: Ctl+W, h: Alt+F4}
+  l: [DEFAULT, MOUSE]
