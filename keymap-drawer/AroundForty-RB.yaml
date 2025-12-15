@@ -303,7 +303,7 @@ layers:
   - $$mdi:progress-download$$
 combos:
 - p: [17, 18]
-  k: {t: LANGUAGE 1, h: LANGUAGE 2}
+  k: {t: LANGUAGE 1, h: Alt+`}
   l: [DEFAULT, MOUSE]
 - p: [8, 9]
   k: '&winmvright'
@@ -319,9 +319,6 @@ combos:
   k: {t: (), h: '&zen_parenthesis'}
   l: [DEFAULT, MOUSE, NUMBER]
   draw_separate: true
-- p: [7, 8]
-  k: Alt+`
-  l: [DEFAULT, MOUSE]
 - p: [20, 21]
   k: Ctl+F
   l: [DEFAULT, MOUSE]
