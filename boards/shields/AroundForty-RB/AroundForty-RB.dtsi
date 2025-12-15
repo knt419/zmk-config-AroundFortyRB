@@ -1,5 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
+
+&uicr {
+        nfct-pins-as-gpios;
+};
+
 / {
     chosen {
        zmk,physical-layout = &moga_physical_layout;
