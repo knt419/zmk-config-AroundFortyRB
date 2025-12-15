@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         IME_ON {
-            bindings = <&imeonoff LANGUAGE_2 LANGUAGE_1>;
+            bindings = <&imeonoff LA(GRAVE) LANGUAGE_1>;
             key-positions = <17 18>;
             layers = <0 1>;
         };
@@ -46,12 +46,6 @@
             bindings = <&paren 0 0>;
             key-positions = <10 19>;
             layers = <0 1 4>;
-        };
-
-        jis_ime_togle {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <7 8>;
-            layers = <0 1>;
         };
 
         find {
